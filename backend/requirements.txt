@@ -1,0 +1,16 @@
+# backend/requirements.txt
+
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+requests==2.31.0
+numpy==1.26.0
+deap==1.4.1
+
+# ✅ БАЗА ДАННЫХ (ДОБАВИТЬ ЭТИ СТРОКИ):
+sqlalchemy==2.0.23
+psycopg2-binary==2.9.9
+
+# Тесты
+pytest==7.4.3
