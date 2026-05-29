@@ -18,7 +18,6 @@
 - [Технологический стек](#-технологический-стек)
 - [Функциональные возможности](#-функциональные-возможности)
 - [Быстрый старт](#-быстрый-старт)
-- [Структура проекта](#-структура-проекта)
 ---
 
 ## 🎯 О проекте
@@ -152,44 +151,4 @@ docker-compose ps
 docker-compose down
 # С удалением томов (если нужно сбросить БД):
 docker-compose down -v
-```
-
-
-## 📁 Структура проекта
-
-```
-courier_robot_router/
-├── backend/
-│   ├── app/
-│   │   ├── main.py              # Точка входа FastAPI
-│   │   ├── api/                 # API роуты
-│   │   ├── core/                # Конфигурация, безопасность
-│   │   ├── models/              # SQLAlchemy модели
-│   │   ├── schemas/             # Pydantic схемы
-│   │   ├── services/            # Бизнес-логика
-│   │   │   ├── routing/         # Логика оптимизации маршрутов
-│   │   │   └── genetic/         # Генетический алгоритм (DEAP)
-│   │   └── db/                  # Работа с БД
-│   ├── Dockerfile
-│   └── requirements.txt
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/          # React-компоненты
-│   │   ├── pages/               # Страницы приложения
-│   │   ├── services/            # API-клиенты (axios)
-│   │   ├── types/               # TypeScript интерфейсы
-│   │   └── utils/               # Вспомогательные функции
-│   ├── public/
-│   ├── Dockerfile
-│   ├── package.json
-│   ├── tsconfig.json
-│   └── vite.config.ts
-│
-├── osrm/
-│   └── data/                    # Файлы карт OSRM (*.osrm)
-│
-├── docker-compose.yml           # Оркестрация сервисов
-├── .gitignore
-└── README.md
 ```
